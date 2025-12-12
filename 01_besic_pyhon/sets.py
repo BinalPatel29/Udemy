@@ -55,3 +55,30 @@ intersection_set
 
 set1.intersection_update(set2)
 set1
+
+set1={1,2,3,4,5,6}
+set2={4,5,6,7,8,9}
+
+##differences
+print(set1.difference(set2))
+set1
+set2.difference(set1)
+##symentic difference
+set1.symmetric_difference(set2)
+
+#sets methods
+set1={1,2,3}
+set2={3,4,5}
+##is subset
+print(set1.issubset(set2))
+print(set1.issuperset(set2))
+
+lst=[1,2,2,3,4,4,5]
+set(lst)
+
+##counting unique words in text
+text="in this tutorial we are discussing about sets"
+words=text.split()
+unique_words=set(words)
+print(unique_words)
+print(len(unique_words))
