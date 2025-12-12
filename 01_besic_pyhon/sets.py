@@ -79,6 +79,8 @@ set(lst)
 ##counting unique words in text
 text="in this tutorial we are discussing about sets"
 words=text.split()
+
+###convert list of words to set to get unique words
 unique_words=set(words)
 print(unique_words)
 print(len(unique_words))
