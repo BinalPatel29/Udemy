@@ -106,3 +106,77 @@ lst2=["a","b","c"]
 
 pair=[[i,j] for i in lst1 for j in lst2]
 print(pair)
+
+# REAL WORLD EXAMPLES
+
+### EXAMPLE-1 -> mange a to do list
+    ## Create a to do list to keep track of task
+    to_do_list=["buy Groceries","Clean the house","Pay the bills"]
+    to_do_list
+    ##adding a task
+    to_do_list.append("schedule meeting")
+    to_do_list.append("go for a run")
+    to_do_list
+    ##remove a completed task
+    to_do_list.remove("Clean the house")
+    to_do_list
+    ##checking if a task in a list
+    if "Pay the bills" in to_do_list:
+        print("don't forget to pay the utillity bills")
+    print("to do list remaining")
+    for task in to_do_list:
+        print(f"-{task}")
+
+### EXAMPLE-2 ->organizing studesnt grades
+    ## create a list to store and calculate average grades for students
+    # organizing student grades
+    grades=[85,92,78,90,88]
+    grades
+    #adding a new grade
+    grades.append(95)
+    grades
+    # calculating the average grade
+    average_grade=sum(grades)/len(grades)
+    average_grade      #print(f"average grade: {average_grade:.2f}")
+    # finding hte highest and lowest grades
+    highest_grade=max(grades)
+    highest_grade
+    lowest_grade=min(grades)
+    lowest_grade
+
+### EXAMPLE-3 -> managing an inventory
+    #use a list to manage inventory items in a store
+    ## managing an inventory
+    inventory=["apples","bananas","oranges","grapes"]
+    inventory
+    ##adding a new item
+    inventory.append("strawberries")
+    inventory
+    ##removing an item
+    inventory.remove("bananas")
+    inventory
+    ##checking if an item in a list
+    item="oranges"
+    if item in inventory:
+       print(f"{item} are in stock.")
+    else:
+       print(f"{item} are out of stock.")
+    ##printing the inventory
+    print("inventory list:")
+    for item in inventory:
+        print(f"-{item}") 
+
+### EXAMPLE-4 -> Colletcing user feedback
+    #use a list to collect and anlyze user feedback
+    feedback=["Great service","Very satisfied","Could be better","Exellent experience"] 
+    feedback
+    #adding new feedback
+    feedback.append("Not happy with service")
+    feedback
+    #counting specific feedback
+    positive_feedback_count=sum(1 for comment in feedback if "great" in comment.lower() or "excellent" in comment.lower())
+    positive_feedback_count
+    #printing all feedback
+    print("User feedback:")
+    for comment in feedback:
+        print(f"-{comment}")
