@@ -1,7 +1,8 @@
+# app1.log (all output)
+
 import logging
 
 ## logging setting
-
 logging.basicConfig(
     level=logging.DEBUG,
     format="%(asctime)s-%(levelname)s-%(message)s",
