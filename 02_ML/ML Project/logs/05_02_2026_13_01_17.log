@@ -1,5 +1,0 @@
-[2026-05-02 13:01:19,131] 97 werkzeug - WARNING -  * Debugger is active!
-[2026-05-02 13:01:19,132] 97 werkzeug - INFO -  * Debugger PIN: 387-740-061
-[2026-05-02 13:01:22,323] 97 werkzeug - INFO - 127.0.0.1 - - [02/May/2026 13:01:22] "GET / HTTP/1.1" 200 -
-[2026-05-02 13:01:44,714] 97 werkzeug - INFO - 127.0.0.1 - - [02/May/2026 13:01:44] "GET /predict_datapoint HTTP/1.1" 200 -
-[2026-05-02 13:02:03,527] 97 werkzeug - INFO - 127.0.0.1 - - [02/May/2026 13:02:03] "GET /predict_datapoint HTTP/1.1" 200 -
